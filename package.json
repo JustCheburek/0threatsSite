@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-table": "^8.16.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
