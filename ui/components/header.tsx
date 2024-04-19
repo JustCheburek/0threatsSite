@@ -46,7 +46,7 @@ export function Header() {
 
 	return (
 			<header className={burger ? "burger_active" : ""}>
-				<div className="header">
+				<div className="header center_text">
 					{/* Лого */}
 					<Link href="/" className="logo" rel="shortcut icon" aria-label="Переход на главную страницу">
 						НулУгроза
