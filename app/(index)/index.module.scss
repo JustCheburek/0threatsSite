@@ -1,0 +1,20 @@
+
+.opinion {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+
+	margin-block: 3rem;
+	padding-inline: 3rem;
+}
+
+.img {
+	border-radius: var(--border-radius);
+}
+
+@media (width > 728px) {
+	.opinion {
+		grid-template-columns: auto 1fr;
+	}
+}

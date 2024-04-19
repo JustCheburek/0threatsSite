@@ -1,0 +1,41 @@
+.box, .img {
+	translate: 0;
+	scale: 1;
+	rotate: 0;
+
+	transition:
+			scale var(--long-transition),
+			rotate var(--long-transition),
+			translate var(--long-transition),
+			filter var(--long-transition),
+			border-radius var(--short-transition);
+}
+
+.box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	place-content: center;
+}
+
+.hover:hover .img {
+	scale: 1.1;
+}
+
+.post {
+	position: relative;
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	aspect-ratio: 16 / 9;
+}
+
+.grid {
+	position: absolute;
+
+	width: 50%;
+	aspect-ratio: 1 / 1;
+}
+
+.pixel {
+	image-rendering: pixelated;
+}

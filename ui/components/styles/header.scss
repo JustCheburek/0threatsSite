@@ -1,0 +1,147 @@
+@import "@styles/mixins";
+
+// Шапка сайта
+header {
+  // Расположение
+  position: sticky;
+  top: 0;
+
+  z-index: var(--3z);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // Размеры
+  min-height: var(--header-size);
+
+  // Бекграунд
+  backdrop-filter: blur(8px);
+  background: var(--background-color-transparent);
+
+  .header {
+    --_gap: 35px;
+
+    // Расположение
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    gap: var(--_gap);
+
+    // Размеры
+    width: min(1200px, 100%);
+
+    // Текст
+    font-weight: 500;
+
+    & > *:not(.nav_container) {
+      z-index: var(--3z) !important;
+    }
+  }
+
+  .nav_box {
+    // Расположение
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  // Регистрация
+  .registration_nav {
+    // Расположение
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+    &.active {
+      color: var(--unic-color);
+    }
+  }
+
+  @media (width < 1024px) {
+    .header {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // Навигация с бургер меню
+    .nav_container {
+      display: none;
+
+      // Расположение
+      justify-content: center;
+      align-items: center;
+
+      column-gap: 2rem;
+      row-gap: 0.5rem;
+
+      position: fixed;
+      inset: 0;
+
+      overflow-y: auto;
+
+      padding: var(--header-size) 1rem 1rem;
+
+      // Размеры
+      height: 100vh;
+      height: 100dvh;
+
+      // Бекграунд
+      background: var(--background-color-transparent);
+
+      &.burger_active {
+        display: flex;
+      }
+    }
+
+    .nav_box {
+      // Расположение
+      flex-direction: column;
+
+      padding: 1.5rem 2rem;
+
+      font-size: var(--h2-size);
+      line-height: var(--h2-line-height);
+
+      @include border();
+
+      row-gap: clamp(0.1rem, 1vh, 1.5rem);
+
+      animation: nav_appearance 700ms;
+    }
+  }
+
+  @media (width < 524px) {
+    .nav_container {
+      flex-direction: column;
+    }
+  }
+}
+
+// Анимация появления 
+@keyframes nav_appearance {
+  0% {
+    transform: translateY(-400px);
+    opacity: 0
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (width < 1024px) {
+  // Размытия фона
+  main, footer {
+    transition: var(--short-transition) filter;
+
+    & :has(~ header.burger_active) {
+      filter: blur(6px);
+    }
+  }
+}
+
+body:has(header.burger_active) {
+  overflow-y: hidden;
+}
