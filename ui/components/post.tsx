@@ -6,15 +6,18 @@ import styles from "./styles/post.module.scss";
 
 type PContainer = {
 	className?: string
+	id?: string
 }
 
 export const PBox = (
 		{
 			children,
-			className = ""
+			className = "",
+			id = ""
 		}: PropsWithChildren<PContainer>
 ) => (
 		<div
+				id={id}
 				className={`${styles.container} ${className}`}
 		>
 			{children}
