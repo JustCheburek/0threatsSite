@@ -1,6 +1,12 @@
 import {MaxSize} from "@components/maxSize";
 import {PBox, PText, PTitle} from "@components/post";
 import {OnThisPage, OnThisPageItem} from "@components/sideNav";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: "Поведение | Нулевая угроза",
+	description: "Как действовать при нападении и как поддержать себя и своих родных в трудную минуту"
+};
 
 export default function SOS() {
 	return (

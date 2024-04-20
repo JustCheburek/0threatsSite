@@ -1,5 +1,11 @@
 import {MaxSize} from "@components/maxSize";
 import {PBox, PText, PTitle} from "@components/post";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: "Новости | Нулевая угроза",
+	description: "Последние новости про помощь пострадавшим и их родственникам и про плохие происшествия"
+};
 
 export default function News() {
 	return (

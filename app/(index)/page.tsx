@@ -3,7 +3,6 @@ import styles from "./index.module.scss"
 import {Img, ImgBox} from "@components/img";
 import {Form, FormButton, FormGroup, FormInput, FormLabel} from "@components/form";
 
-
 export default function Main() {
 	return (
 			<main>
