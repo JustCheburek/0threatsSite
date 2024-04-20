@@ -24,7 +24,7 @@ const MainNav = ({burger, setBurger}: Burger) => (
 				</li>
 				<li>
 					<NavLink href="/sos" className="mini_button">
-						При теракте
+						Поведение
 					</NavLink>
 				</li>
 				<li>
