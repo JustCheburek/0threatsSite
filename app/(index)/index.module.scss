@@ -1,5 +1,4 @@
-
-.opinion {
+.box {
 	display: grid;
 	align-items: center;
 	justify-content: center;
@@ -11,9 +10,13 @@
 
 .img {
 	border-radius: var(--border-radius);
+	object-fit: cover;
 }
 
 @media (width > 728px) {
+	.form_box {
+		grid-template-columns: 1fr 1fr;
+	}
 	.opinion {
 		grid-template-columns: auto 1fr;
 	}
