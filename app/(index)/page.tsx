@@ -21,9 +21,9 @@ export default function Main() {
 							Когда в наш мир вторгаются такие события, как теракты, сложно остаться от этого в стороне – хотя бы в мыслях.
 						</q>
 					</div>
-					<p>
-						Обращаясь к нам вы не только можете почувствовать поддержку, но и получить информацию от профессионалов
-					</p>
+					<h3 className="center_text">
+						Получить профессиональную помощь
+					</h3>
 					<div className={`${styles.box} ${styles.form_box}`}>
 						<Form>
 							<FormLabel>
@@ -39,7 +39,6 @@ export default function Main() {
 									М
 									<FormInput
 											type="radio"
-											placeholder="Пол"
 											name="gender"
 											defaultChecked
 											autoComplete="gender"
@@ -49,7 +48,6 @@ export default function Main() {
 									Ж
 									<FormInput
 											type="radio"
-											placeholder="Пол"
 											name="gender"
 											autoComplete="gender"
 									/>
@@ -74,12 +72,30 @@ export default function Main() {
 										required
 								/>
 							</FormLabel>
+							<FormGroup>
+								<FormLabel>
+									Онлайн
+									<FormInput
+											type="radio"
+											name="where"
+											defaultChecked
+											autoComplete="where"
+									/>
+								</FormLabel>
+								<FormLabel>
+									Оффлайн
+									<FormInput
+											type="radio"
+											name="where"
+											autoComplete="where"
+									/>
+								</FormLabel>
+							</FormGroup>
 							<FormLabel>
 								<FormInput
 										placeholder="Адрес"
 										name="address"
 										autoComplete="address"
-										required
 								/>
 							</FormLabel>
 							<FormButton>

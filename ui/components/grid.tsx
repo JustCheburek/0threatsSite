@@ -67,7 +67,6 @@ export const GBox = (
 			href = "",
 			anotherSite = false,
 			imgs,
-			target = "_blank",
 			rel = "noopener noreferrer",
 			className = ""
 		}: PropsWithChildren<GBox>) => {
@@ -86,7 +85,7 @@ export const GBox = (
 
 	if (anotherSite) {
 		return (
-				<a href={href} target={target} rel={rel} className={classNameResult}>
+				<a href={href} target="_blank" rel={rel} className={classNameResult}>
 					{children}
 					<AnotherSiteSvg className={styles.link}/>
 				</a>
