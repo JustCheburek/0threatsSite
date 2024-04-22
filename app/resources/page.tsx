@@ -5,13 +5,14 @@ import {ImgBox, Img} from "@components/img";
 
 export const metadata: Metadata = {
 	title: "Ресурсы помощи | Нулевая угроза",
-	description: "Сборы денег на поддержку пострадавшим от террора и их родственникам"
+	description: "Сборы денег на поддержку пострадавшим и их родственникам"
 };
 
 export default function Resources() {
 	return (
 			<main>
 				<MaxSize>
+					<h1>Ресурсы помощи</h1>
 					<GContainer border>
 						<GBox href="https://psi.mchs.gov.ru/" imgs="one" anotherSite>
 							<ImgBox type="grid">

@@ -23,8 +23,13 @@ const MainNav = ({burger, setBurger}: Burger) => (
 					</NavLink>
 				</li>
 				<li>
-					<NavLink href="/sos" className="mini_button">
-						Поведение
+					<NavLink href="/save" className="mini_button">
+						Спасение
+					</NavLink>
+				</li>
+				<li>
+					<NavLink href="/after" className="mini_button">
+						После происшествия
 					</NavLink>
 				</li>
 				<li>

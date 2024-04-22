@@ -4,7 +4,7 @@ import type {Metadata} from "next";
 
 export const metadata: Metadata = {
 	title: "Новости | Нулевая угроза",
-	description: "Последние новости про помощь пострадавшим и их родственникам и про плохие происшествия"
+	description: "Последние новости про помощь пострадавшим и их родственникам, а также про плохие происшествия"
 };
 
 export default function News() {

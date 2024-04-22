@@ -17,9 +17,9 @@ import {Header} from "@components/header";
 import {Footer} from "@components/footer";
 
 export const metadata: Metadata = {
-	title: "Нулевая угроза",
-	description: "Психологическая помощь пострадавшим и их родственникам от влияния терроризма"
-};
+	title: "Нулевая угроза - сайт Вашего спасения",
+	description: "Порою сложно жить в мире, где существует настолько много угроз жизни, мы готовы вам помочь!"
+}
 
 export default function RootLayout(
 		{
