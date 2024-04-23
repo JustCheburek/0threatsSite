@@ -28,7 +28,7 @@ export default function Resources() {
 
 							<GText>При ракетной опасности</GText>
 						</GBox>
-						<GBox href="/save/nature" imgs="one">
+						<GBox href="https://16-mchs-gov-ru.turbopages.org/16.mchs.gov.ru/s/deyatelnost/poleznaya-informaciya/rekomendacii-naseleniyu/prirodnye-chs/pravila-povedeniya-pri-chs-prirodnogo-haraktera" imgs="one" anotherSite>
 							<ImgBox type="grid">
 								<Img src="/planet.png" alt="Природные катаклизмы"/>
 							</ImgBox>
