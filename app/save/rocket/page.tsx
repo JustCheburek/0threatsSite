@@ -4,7 +4,7 @@ import {RelativeNav} from "@components/relativeNav";
 import {PBox, PText, PTitle} from "@components/post";
 
 export const metadata: Metadata = {
-	title: "Ракетная опасность | Нулевая угроза",
+	title: "Спасение при ракетной опасности | Нулевая угроза",
 	description: "Как действовать при нападении и выжить?"
 };
 
@@ -18,7 +18,7 @@ export default function Save() {
 								{name: "rocket", displayname: "При ракетной опасности"}
 							]}
 					/>
-					<h1>Ракетная опасность</h1>
+					<h1>Спасение при ракетной опасности</h1>
 					<PBox id="places">
 						<PTitle>
 							<h2>

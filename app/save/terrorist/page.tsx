@@ -5,7 +5,7 @@ import type {Metadata} from "next";
 import {RelativeNav} from "@components/relativeNav";
 
 export const metadata: Metadata = {
-	title: "Теракты | Нулевая угроза",
+	title: "Спасение при терактах | Нулевая угроза",
 	description: "Как действовать при нападении и выжить?"
 };
 
@@ -21,7 +21,7 @@ export default function Save() {
 									{name: "terrorist", displayname: "При терактах"}
 								]}
 						/>
-						<h1>Теракты</h1>
+						<h1>Спасение при терактах</h1>
 						<p className="red_line">
 							К террористическому акту невозможно подготовиться заранее, поэтому следует всегда быть настороже.
 						</p>

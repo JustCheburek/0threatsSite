@@ -15,7 +15,6 @@ export default function Resources() {
 					<div/>
 
 					<div className="content">
-
 						<h1>После происшествия</h1>
 
 						<PBox id="self-help">

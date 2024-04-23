@@ -37,11 +37,6 @@ const MainNav = ({burger, setBurger}: Burger) => (
 						Ресурсы помощи
 					</NavLink>
 				</li>
-				<li>
-					<NavLink href="/news" className="mini_button">
-						Новости
-					</NavLink>
-				</li>
 			</ul>
 		</nav>
 )
