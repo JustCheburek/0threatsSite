@@ -12,7 +12,8 @@ export default function Resources() {
 	return (
 			<main>
 				<MaxSize>
-					<h1>Ресурсы помощи</h1>
+					<h1>Ресурсы помощи онлайн</h1>
+
 					<GContainer border>
 						<GBox href="https://psi.mchs.gov.ru/" imgs="one" anotherSite>
 							<ImgBox type="grid">

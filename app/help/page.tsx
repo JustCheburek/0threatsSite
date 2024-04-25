@@ -4,7 +4,7 @@ import {PBox, PText, PTitle} from "@components/post";
 import {OnThisPage, OnThisPageItem} from "@components/sideNav";
 
 export const metadata: Metadata = {
-	title: "После происшествия | Нулевая угроза",
+	title: "Самопомощь | Нулевая угроза",
 	description: "Как действовать в различных ситуациях?"
 };
 
@@ -15,7 +15,7 @@ export default function Resources() {
 					<div/>
 
 					<div className="content">
-						<h1>После происшествия</h1>
+						<h1>Самопомощь</h1>
 
 						<PBox id="self-help">
 							<PTitle>

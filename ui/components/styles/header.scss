@@ -60,6 +60,10 @@ header {
     }
   }
 
+  .icon {
+    border-radius: var(--border-radius);
+  }
+
   @media (width < 1024px) {
     .header {
       grid-template-columns: 1fr 1fr;

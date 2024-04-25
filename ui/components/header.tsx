@@ -4,6 +4,7 @@ import {useState} from "react";
 import Link from "next/link";
 import "./styles/header.scss"
 import {Burger} from "@components/burger";
+import {Img} from "@components/img";
 
 type Burger = {
 	burger: boolean,
@@ -28,8 +29,8 @@ const MainNav = ({burger, setBurger}: Burger) => (
 					</NavLink>
 				</li>
 				<li>
-					<NavLink href="/after" className="mini_button">
-						После происшествия
+					<NavLink href="/help" className="mini_button">
+						Самопомощь
 					</NavLink>
 				</li>
 				<li>
@@ -49,7 +50,7 @@ export function Header() {
 				<div className="header center_text">
 					{/* Лого */}
 					<Link href="/" className="logo" rel="shortcut icon" aria-label="Переход на главную страницу">
-						НулУгроза
+						<Img src='/icon.jpeg' className="icon" alt="Лого" width={55}/>
 					</Link>
 
 					{/* Бургер иконка */}

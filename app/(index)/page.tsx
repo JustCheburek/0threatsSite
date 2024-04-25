@@ -2,16 +2,17 @@ import {MaxSize} from "@components/maxSize";
 import styles from "./index.module.scss"
 import {Img, ImgBox} from "@components/img";
 import {Form, FormButton, FormGroup, FormInput, FormLabel} from "@components/form";
+import Link from "next/link";
 
 export default function Main() {
 	return (
 			<main>
-				<MaxSize>
+				<MaxSize className="grid_center">
 					<h1>
 						Нулевая угроза
 					</h1>
 					<h3 className="center_text">
-						Ваш голос – наша сила: вместе против терроризма
+						Защищая жизнь, мы защищаем будущее
 					</h3>
 					<div className={`${styles.box} ${styles.opinion}`}>
 						<ImgBox>
@@ -22,8 +23,13 @@ export default function Main() {
 						</q>
 					</div>
 					<h3 className="center_text">
-						Получить профессиональную помощь
+						Получить ближайшие медцентры поблизости на почту
 					</h3>
+					<Link href="/resources" className={styles.link}>
+						<h4 className="center_text semibold-font">
+							или получить помощь онлайн
+						</h4>
+					</Link>
 					<div className={`${styles.box} ${styles.form_box}`}>
 						<Form>
 							<FormLabel>
@@ -32,6 +38,17 @@ export default function Main() {
 										name="name"
 										autoComplete="name"
 										required
+								/>
+							</FormLabel>
+							<FormLabel>
+								<FormInput
+										placeholder="Возраст"
+										name="age"
+										autoComplete="age"
+										type="number"
+										required
+										min={14}
+										max={200}
 								/>
 							</FormLabel>
 							<FormGroup>
@@ -55,42 +72,12 @@ export default function Main() {
 							</FormGroup>
 							<FormLabel>
 								<FormInput
-										placeholder="Возраст"
-										name="age"
-										autoComplete="age"
-										type="number"
-										required
-										min={14}
-										max={200}
-								/>
-							</FormLabel>
-							<FormLabel>
-								<FormInput
 										placeholder="Почта"
 										name="email"
 										autoComplete="email"
 										required
 								/>
 							</FormLabel>
-							<FormGroup>
-								<FormLabel>
-									Онлайн
-									<FormInput
-											type="radio"
-											name="where"
-											defaultChecked
-											autoComplete="where"
-									/>
-								</FormLabel>
-								<FormLabel>
-									Оффлайн
-									<FormInput
-											type="radio"
-											name="where"
-											autoComplete="where"
-									/>
-								</FormLabel>
-							</FormGroup>
 							<FormLabel>
 								<FormInput
 										placeholder="Адрес"
