@@ -18,6 +18,9 @@
     "typescript": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
-    "@types/react-dom": "latest"
-  }
+    "@types/react-dom": "latest",
+    "@types/bun": "latest"
+  },
+  "module": "index.ts",
+  "type": "module"
 }
